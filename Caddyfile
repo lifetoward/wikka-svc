@@ -1,0 +1,9 @@
+:80 {
+    bind localhost
+    root * /srv
+    php_fastcgi localhost:9000
+    log {
+        output stdout
+        level DEBUG
+    }
+}

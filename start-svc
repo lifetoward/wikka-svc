@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# Run parameters for local installation of the service
+
+hostport='8080'             # localhost port on which to access the service
+cname='wikka'               # name for the running container
+sqlitedb="mnt/wikka.sqlite" # path to the sqlite database file
+log='mnt/out.log'           # log file to receive container stdout
+err='mnt/err.log'           # log file to receive container stderr
+
+# Derived parameters
+
+if [ -w "$log" ] ; then
+  
+else
+  
+fi
+if [ -w "$err" ] ; then 
+
+else
+
+fi
